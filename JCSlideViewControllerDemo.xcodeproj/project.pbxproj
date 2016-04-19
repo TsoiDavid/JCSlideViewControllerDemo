@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D337BD01CC50BB6001088EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D337BCF1CC50BB6001088EC /* main.m */; };
+		6D337BD31CC50BB6001088EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D337BD21CC50BB6001088EC /* AppDelegate.m */; };
+		6D337BD91CC50BB6001088EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D337BD71CC50BB6001088EC /* Main.storyboard */; };
+		6D337BDB1CC50BB6001088EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D337BDA1CC50BB6001088EC /* Assets.xcassets */; };
+		6D337BDE1CC50BB6001088EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D337BDC1CC50BB6001088EC /* LaunchScreen.storyboard */; };
+		6D337BE81CC50C4E001088EC /* JCContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D337BE71CC50C4E001088EC /* JCContentViewController.m */; };
+		6D337BEB1CC50C79001088EC /* JCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D337BEA1CC50C79001088EC /* JCRootViewController.m */; };
+		6D337BEE1CC52B1E001088EC /* JCLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D337BED1CC52B1E001088EC /* JCLeftViewController.m */; };
+		6D337BF11CC537DA001088EC /* JCLeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D337BF01CC537DA001088EC /* JCLeftTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6D337BCB1CC50BB6001088EC /* JCSlideViewControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCSlideViewControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D337BCF1CC50BB6001088EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6D337BD11CC50BB6001088EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6D337BD21CC50BB6001088EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6D337BD81CC50BB6001088EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6D337BDA1CC50BB6001088EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D337BDD1CC50BB6001088EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6D337BDF1CC50BB6001088EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D337BE61CC50C4E001088EC /* JCContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCContentViewController.h; sourceTree = "<group>"; };
+		6D337BE71CC50C4E001088EC /* JCContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCContentViewController.m; sourceTree = "<group>"; };
+		6D337BE91CC50C79001088EC /* JCRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCRootViewController.h; sourceTree = "<group>"; };
+		6D337BEA1CC50C79001088EC /* JCRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRootViewController.m; sourceTree = "<group>"; };
+		6D337BEC1CC52B1E001088EC /* JCLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCLeftViewController.h; sourceTree = "<group>"; };
+		6D337BED1CC52B1E001088EC /* JCLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCLeftViewController.m; sourceTree = "<group>"; };
+		6D337BEF1CC537DA001088EC /* JCLeftTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCLeftTableViewController.h; sourceTree = "<group>"; };
+		6D337BF01CC537DA001088EC /* JCLeftTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCLeftTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D337BC81CC50BB6001088EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D337BC21CC50BB6001088EC = {
+			isa = PBXGroup;
+			children = (
+				6D337BCD1CC50BB6001088EC /* JCSlideViewControllerDemo */,
+				6D337BCC1CC50BB6001088EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D337BCC1CC50BB6001088EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D337BCB1CC50BB6001088EC /* JCSlideViewControllerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D337BCD1CC50BB6001088EC /* JCSlideViewControllerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6D337BE51CC50C22001088EC /* JCSliderView */,
+				6D337BD11CC50BB6001088EC /* AppDelegate.h */,
+				6D337BD21CC50BB6001088EC /* AppDelegate.m */,
+				6D337BD71CC50BB6001088EC /* Main.storyboard */,
+				6D337BDA1CC50BB6001088EC /* Assets.xcassets */,
+				6D337BDC1CC50BB6001088EC /* LaunchScreen.storyboard */,
+				6D337BDF1CC50BB6001088EC /* Info.plist */,
+				6D337BCE1CC50BB6001088EC /* Supporting Files */,
+			);
+			path = JCSlideViewControllerDemo;
+			sourceTree = "<group>";
+		};
+		6D337BCE1CC50BB6001088EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D337BCF1CC50BB6001088EC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6D337BE51CC50C22001088EC /* JCSliderView */ = {
+			isa = PBXGroup;
+			children = (
+				6D337BE61CC50C4E001088EC /* JCContentViewController.h */,
+				6D337BE71CC50C4E001088EC /* JCContentViewController.m */,
+				6D337BE91CC50C79001088EC /* JCRootViewController.h */,
+				6D337BEA1CC50C79001088EC /* JCRootViewController.m */,
+				6D337BEF1CC537DA001088EC /* JCLeftTableViewController.h */,
+				6D337BF01CC537DA001088EC /* JCLeftTableViewController.m */,
+				6D337BEC1CC52B1E001088EC /* JCLeftViewController.h */,
+				6D337BED1CC52B1E001088EC /* JCLeftViewController.m */,
+			);
+			path = JCSliderView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D337BCA1CC50BB6001088EC /* JCSlideViewControllerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D337BE21CC50BB6001088EC /* Build configuration list for PBXNativeTarget "JCSlideViewControllerDemo" */;
+			buildPhases = (
+				6D337BC71CC50BB6001088EC /* Sources */,
+				6D337BC81CC50BB6001088EC /* Frameworks */,
+				6D337BC91CC50BB6001088EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JCSlideViewControllerDemo;
+			productName = JCSlideViewControllerDemo;
+			productReference = 6D337BCB1CC50BB6001088EC /* JCSlideViewControllerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D337BC31CC50BB6001088EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Tosi;
+				TargetAttributes = {
+					6D337BCA1CC50BB6001088EC = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 6D337BC61CC50BB6001088EC /* Build configuration list for PBXProject "JCSlideViewControllerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D337BC21CC50BB6001088EC;
+			productRefGroup = 6D337BCC1CC50BB6001088EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D337BCA1CC50BB6001088EC /* JCSlideViewControllerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D337BC91CC50BB6001088EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D337BDE1CC50BB6001088EC /* LaunchScreen.storyboard in Resources */,
+				6D337BDB1CC50BB6001088EC /* Assets.xcassets in Resources */,
+				6D337BD91CC50BB6001088EC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D337BC71CC50BB6001088EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D337BE81CC50C4E001088EC /* JCContentViewController.m in Sources */,
+				6D337BEB1CC50C79001088EC /* JCRootViewController.m in Sources */,
+				6D337BD31CC50BB6001088EC /* AppDelegate.m in Sources */,
+				6D337BF11CC537DA001088EC /* JCLeftTableViewController.m in Sources */,
+				6D337BD01CC50BB6001088EC /* main.m in Sources */,
+				6D337BEE1CC52B1E001088EC /* JCLeftViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6D337BD71CC50BB6001088EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D337BD81CC50BB6001088EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6D337BDC1CC50BB6001088EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D337BDD1CC50BB6001088EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D337BE01CC50BB6001088EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6D337BE11CC50BB6001088EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D337BE31CC50BB6001088EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JCSlideViewControllerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Tosi.JCSlideViewControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6D337BE41CC50BB6001088EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JCSlideViewControllerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Tosi.JCSlideViewControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D337BC61CC50BB6001088EC /* Build configuration list for PBXProject "JCSlideViewControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D337BE01CC50BB6001088EC /* Debug */,
+				6D337BE11CC50BB6001088EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D337BE21CC50BB6001088EC /* Build configuration list for PBXNativeTarget "JCSlideViewControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D337BE31CC50BB6001088EC /* Debug */,
+				6D337BE41CC50BB6001088EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6D337BC31CC50BB6001088EC /* Project object */;
+}
