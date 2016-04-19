@@ -14,7 +14,6 @@
 		6D337BDE1CC50BB6001088EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D337BDC1CC50BB6001088EC /* LaunchScreen.storyboard */; };
 		6D337BE81CC50C4E001088EC /* JCContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D337BE71CC50C4E001088EC /* JCContentViewController.m */; };
 		6D337BEB1CC50C79001088EC /* JCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D337BEA1CC50C79001088EC /* JCRootViewController.m */; };
-		6D337BEE1CC52B1E001088EC /* JCLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D337BED1CC52B1E001088EC /* JCLeftViewController.m */; };
 		6D337BF11CC537DA001088EC /* JCLeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D337BF01CC537DA001088EC /* JCLeftTableViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -31,8 +30,6 @@
 		6D337BE71CC50C4E001088EC /* JCContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCContentViewController.m; sourceTree = "<group>"; };
 		6D337BE91CC50C79001088EC /* JCRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCRootViewController.h; sourceTree = "<group>"; };
 		6D337BEA1CC50C79001088EC /* JCRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRootViewController.m; sourceTree = "<group>"; };
-		6D337BEC1CC52B1E001088EC /* JCLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCLeftViewController.h; sourceTree = "<group>"; };
-		6D337BED1CC52B1E001088EC /* JCLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCLeftViewController.m; sourceTree = "<group>"; };
 		6D337BEF1CC537DA001088EC /* JCLeftTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCLeftTableViewController.h; sourceTree = "<group>"; };
 		6D337BF01CC537DA001088EC /* JCLeftTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCLeftTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,8 +93,6 @@
 				6D337BEA1CC50C79001088EC /* JCRootViewController.m */,
 				6D337BEF1CC537DA001088EC /* JCLeftTableViewController.h */,
 				6D337BF01CC537DA001088EC /* JCLeftTableViewController.m */,
-				6D337BEC1CC52B1E001088EC /* JCLeftViewController.h */,
-				6D337BED1CC52B1E001088EC /* JCLeftViewController.m */,
 			);
 			path = JCSliderView;
 			sourceTree = "<group>";
@@ -177,7 +172,6 @@
 				6D337BD31CC50BB6001088EC /* AppDelegate.m in Sources */,
 				6D337BF11CC537DA001088EC /* JCLeftTableViewController.m in Sources */,
 				6D337BD01CC50BB6001088EC /* main.m in Sources */,
-				6D337BEE1CC52B1E001088EC /* JCLeftViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +318,7 @@
 				6D337BE41CC50BB6001088EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

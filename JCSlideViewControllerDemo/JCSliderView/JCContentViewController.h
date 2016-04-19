@@ -15,6 +15,7 @@
 @end
 
 @interface JCContentViewController : UIViewController
+
 @property (strong,nonatomic) id<JCContentViewDelegate> delegate;
 
 @end

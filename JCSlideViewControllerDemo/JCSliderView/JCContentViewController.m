@@ -28,7 +28,17 @@
     self.navigationItem.leftBarButtonItem = item;
     _isSlide = NO;
     
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+    button.frame = CGRectMake(self.view.center.x, self.view.center.y, 100, 100);
+    [button setTitle:@"aa" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+    
     // Do any additional setup after loading the view.
+}
+- (void)click {
+    NSLog(@"click");
 }
 -(void)toleft{
     

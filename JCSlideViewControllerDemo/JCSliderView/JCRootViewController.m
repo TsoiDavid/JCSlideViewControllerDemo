@@ -27,7 +27,7 @@ static const CGFloat contentViewSlidePercentOfWidth = 0.6;
 
 - (instancetype)initWithContentViewController:(JCContentViewController *)contentViewController leftViewController:(JCLeftTableViewController *)leftViewController {
     if ((self = [super init]) && contentViewController != nil && leftViewController != nil) {
-        
+
         UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:contentViewController];
         contentViewController.delegate = self;
         _contentViewController = (id)nav;//类型强转换
@@ -39,6 +39,7 @@ static const CGFloat contentViewSlidePercentOfWidth = 0.6;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor grayColor];
     [self setContentView];
 }
 - (void)setContentView {
@@ -51,30 +52,44 @@ static const CGFloat contentViewSlidePercentOfWidth = 0.6;
 //    [self addChildViewController:_contentViewController];
     
 }
-- (void)setLeftView {
-    _leftView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width * contentViewSlidePercentOfWidth, self.view.frame.size.height)];
-    _leftViewController.view.frame = _leftView.frame;
+- (void)prepareLeftView {
+    CGFloat leftViewH = self.view.frame.size.height * 0.8;
+    CGFloat leftY = self.view.frame.size.height * 0.2;
+    
+    _leftView = [[UIView alloc]initWithFrame:CGRectMake(self.view.center.x, leftY, self.view.frame.size.width * contentViewSlidePercentOfWidth, leftViewH)];
+    _leftView.alpha = 0;
+    _leftViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width * contentViewSlidePercentOfWidth, self.view.frame.size.height);
     [self.view insertSubview:_leftView belowSubview:_contentView];
     [_leftView addSubview:_leftViewController.view];
     
 }
 #pragma mark contentViewControllerDelegate
 - (void)checkContentViewisSlide:(BOOL)isSlide {
-    [self setLeftView];
+    
     self.contentView.frame.origin.x == 0?[self openSlideView]:[self closeSlideView];
 }
 
 - (void)openSlideView {
-    [UIView animateWithDuration:0.3 delay:0 usingSpringWithDamping:1 initialSpringVelocity:1 options:UIViewAnimationOptionLayoutSubviews animations:^{
+    [self prepareLeftView];
+    [UIView animateWithDuration:0.6 delay:0 usingSpringWithDamping:1 initialSpringVelocity:1 options:UIViewAnimationOptionLayoutSubviews animations:^{
+        _leftView.frame = CGRectMake(0, 0, self.view.frame.size.width * contentViewSlidePercentOfWidth, self.view.frame.size.height);
+        _leftView.alpha = 1;
         _contentView.transform = CGAffineTransformMakeTranslation(self.view.frame.size.width * contentViewSlidePercentOfWidth, 0);
     } completion:^(BOOL finished) {
         
     }];
 }
 - (void)closeSlideView {
-    [UIView animateWithDuration:0.3 delay:0 usingSpringWithDamping:1 initialSpringVelocity:1 options:UIViewAnimationOptionLayoutSubviews animations:^{
+    [UIView animateWithDuration:0.6 delay:0 usingSpringWithDamping:1 initialSpringVelocity:1 options:UIViewAnimationOptionAllowUserInteraction animations:^{
+        CGFloat leftViewH = self.view.frame.size.height * 0.8;
+        CGFloat leftY = self.view.frame.size.height * 0.2;
+
+        _leftView.frame = CGRectMake(self.view.center.x, leftY, self.view.frame.size.width * contentViewSlidePercentOfWidth, leftViewH);
+        _leftView.alpha = 0;
         _contentView.transform = CGAffineTransformIdentity;
     } completion:^(BOOL finished) {
+        [_leftView removeFromSuperview];
+        [_leftViewController removeFromParentViewController];
         
     }];
 }
